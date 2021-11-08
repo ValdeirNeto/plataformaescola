@@ -1,0 +1,117 @@
+.cmn-toggle {
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+  }
+  .cmn-toggle + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  }
+  input.cmn-toggle-round + label {
+    padding: 2px;
+    width: 40px;
+    height: 20px;
+    background-color: #dddddd;
+    border-radius: 60px;
+  }
+  input.cmn-toggle-round + label:before,
+  input.cmn-toggle-round + label:after {
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    bottom: 1px;
+    content: "";
+  }
+  input.cmn-toggle-round + label:before {
+    right: 1px;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: background 0.4s;
+  }
+  input.cmn-toggle-round + label:after {
+    width: 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: margin 0.4s;
+  }
+  input.cmn-toggle-round:checked + label:before {
+    background-color: #3490dc; 
+  }
+  input.cmn-toggle-round:checked + label:after {
+    margin-left: 20px;
+  }
+
+.py-4 .fundo{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .7;
+  width: auto;
+  height: auto;
+  background:url('../img/lousa.png') no-repeat;
+}
+
+.scroll{
+  height:450px; overflow-y: scroll; position: relative;
+}
+
+.line {
+  position: relative;
+  width: 0px;
+  border-right: 2px solid rgb(255, 255, 255);
+  color: #fff;
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: Pacifico;
+}
+/*Animação*/
+.anim-typewriter {
+  animation: typewriter 4s steps(9) 500ms infinite,
+  blinkTextCursor 500ms steps(9) infinite normal;
+}
+@keyframes typewriter {
+  0% {
+        width: 0px;
+  }
+  10% {
+        width: 0px;
+  }
+  25% {
+        width: 160px;
+  }
+  75% {
+        width: 160px;
+  }
+  90% {
+        width: 0px;
+  }
+  100% {
+        width: 0px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+        border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+        border-right-color: transparent;
+  }
+}
+
+@media (min-width: 1200px){
+  .menu-lg-7 {
+    width: 62.333333%;
+  }
+  .menu-lg-3 {
+    width: 18%;
+  }
+}
